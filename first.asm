@@ -56,7 +56,7 @@
 ;   printf num, 1
 ;	
 ;   mov eax, [num]
-;   ;inc eax
+;   inc eax
 ;   pop ecx
 ;   loop l1
 ;	
@@ -69,10 +69,23 @@ section	.text
    global _start        
 	
 _start:	            
+    mov eax, '8'
+    ;mov eax, [num]
+    sub eax, '0'
+    mov ebx, '4'
+    sub ebx, '0'
+    div ebx
+    add eax,'0'
+    add ebx,'0'
+    
+    mov [num], ebx
     printf num, 2
 
     mov eax, 1
     int 0x80
     
-section .data
-num dd '11'
+;section .data
+;num dw '8'
+segment .bss
+num resb 1
+
