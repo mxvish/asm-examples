@@ -69,23 +69,17 @@ section	.text
    global _start        
 	
 _start:	            
-    mov eax, '8'
-    ;mov eax, [num]
-    sub eax, '0'
-    mov ebx, '4'
-    sub ebx, '0'
+    xor edx, edx
+    mov eax, 8
+    mov ebx, 4
     div ebx
-    add eax,'0'
-    add ebx,'0'
+    add edx,'0'
     
-    mov [num], ebx
+    mov [num], edx
     printf num, 2
 
     mov eax, 1
     int 0x80
     
-;section .data
-;num dw '8'
 segment .bss
 num resb 1
-
