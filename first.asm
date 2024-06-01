@@ -7,6 +7,7 @@
 %endmacro
 
 ;;reference https://www.tutorialspoint.com/assembly_programming/assembly_quick_guide.htm
+;; https://cs.lmu.edu/~ray/notes/nasmtutorial/
 
 ;;=======================================================
 ;section	.text
