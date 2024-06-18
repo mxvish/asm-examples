@@ -8,6 +8,7 @@
 
 ;;reference https://www.tutorialspoint.com/assembly_programming/assembly_quick_guide.htm
 ;; https://cs.lmu.edu/~ray/notes/nasmtutorial/
+;; http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html
 
 ;;=======================================================
 ;section	.text
@@ -71,8 +72,9 @@ section	.text
 	
 _start:	            
     xor edx, edx
-    mov eax, 8
-    mov ebx, 4
+    mov eax, 20 
+    ;mov eax, 23 
+    mov ebx, 12
     div ebx
     add edx,'0'
     
@@ -83,4 +85,4 @@ _start:
     int 0x80
     
 segment .bss
-num resb 1
+num resd 2
