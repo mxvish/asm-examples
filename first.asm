@@ -9,6 +9,7 @@
 ;;reference https://www.tutorialspoint.com/assembly_programming/assembly_quick_guide.htm
 ;; https://cs.lmu.edu/~ray/notes/nasmtutorial/
 ;; http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html
+;; https://web.stanford.edu/class/cs107/resources/x86-64-reference.pdf
 
 ;;=======================================================
 ;section	.text
